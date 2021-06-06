@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="btn-panel container">
+
+        <div class="inner-panel-content">
+            <div class="card-title">
+                <h3 id="title">Ingresa el numero de cartas a generar</h3>
+
+            </div>
+            <div class="btn-input">
+                <form id="input-form">
+                    <input type="number" name="card-generator" id="card-generator" placeholder="N° Cards">
+                    <button type="submit">↵</button>
+                </form>
+                <button class="btn-card reset hide">RESET</button>
+            </div>
+            <div class="sort-input">
+                <button id="bubble" class="btn-card bubble bouncy hide">Bubble Sort</button>
+                <button id="select" class="btn-card select bouncy hide">Select Sort</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="generated-cards container">
+        <h1 id="card-generated-h1" class="hide">Generated cards</h1>
+        <div id="card-display" class="cards-display">
+        </div>
+    </div>
+
+    <div id="sorted-card" class="generated-cards container">
+        <h1 id="card-sorted-h1" class="hide">Sorted Cards</h1>
+        <div id="display">
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
